@@ -14,27 +14,7 @@
 
 </head>
 <body>
-        <div class="tab">
-            <p>
-                Our products
-            </p>
-
-            <div class="tab__items">
-                <div class="tabs__items__item">
-                    <i></i> Data factory <br>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas molestiae porro
-                </div>
-
-                <div class="tab__items__item">
-                    <i></i> Data factory <br>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas molestiae porro
-                </div>
-            </div>
-        </div>
-
-
-        <div class="hero">
-        <div class="hero__top">
+                <div class="top">
                     <p>
                         Maintenance prevue le 17/08/2022
                             <a href="">Recevoir une alerte</a>
@@ -42,11 +22,11 @@
                     </p>
                 </div>
 
-            <nav class="nav">
-                <div class="nav__content">
-                    <a href="public/img/Logo_blanc.svg" class='logo'>
+        <nav class="nav">
+            <div class="nav__menu">
+                <a href="public/img/Logo_blanc.svg" class='logo'>
                         <img src="public/img/Logo_blanc.svg" alt="">
-                    </a>
+                </a>
                     <ul>
                             <li>
                                 <a href="">
@@ -73,7 +53,9 @@
                         </p>
                     </div>
                 </div>
-            </nav>
+        </nav>
+
+        <div class="hero">
 
                 <div class="hero__main">
                     <div class="hero__main__block">
@@ -109,141 +91,141 @@
         </div>
 
         <section>
-        <div class="about">
-            <div class="about__item">
-                <h2>
-                      Get out of the chaos
-                </h2>
+            <div class="about">
+                <div class="about__item">
+                    <h2>
+                        Get out of the chaos
+                    </h2>
+                </div>
+
+                <div class="about__item">
+                    <p>
+                        In today's perpetual disruption and digital transformation era, volume of data managed expand exponentially and change the way organizations do business. This comes as little surprise and induces a rising demand for data-driven customer experiences, together with changing data volume/sources and quality requirements.
+                        However, company runs their processes over hundreds of systems that don't play nice together, leaving a lot of room for inefficiencies to hide that are silent killers to your business performance.
+                        While many companies state they want to be data-driven, most have only begun to scratch the surface in terms of realizing the full potential of this rich resource.
+                        Pilot'in recognizes the right for organizations to become truly data-driven, moving  from a fragmented view to a global vision and drive their strategy even further.
+
+                    </p>
+
+                    <button class='btn btn-cyan'>
+                        Discover our vision
+                    </button>
+                </div>
             </div>
-
-            <div class="about__item">
-                <p>
-                    In today's perpetual disruption and digital transformation era, volume of data managed expand exponentially and change the way organizations do business. This comes as little surprise and induces a rising demand for data-driven customer experiences, together with changing data volume/sources and quality requirements.
-                    However, company runs their processes over hundreds of systems that don't play nice together, leaving a lot of room for inefficiencies to hide that are silent killers to your business performance.
-                    While many companies state they want to be data-driven, most have only begun to scratch the surface in terms of realizing the full potential of this rich resource.
-                    Pilot'in recognizes the right for organizations to become truly data-driven, moving  from a fragmented view to a global vision and drive their strategy even further.
-
-                </p>
-
-                <button class='btn btn-cyan'>
-                    Discover our vision
-                </button>
-            </div>
-        </div>
         </section>
 
         <section>
-        <div class="blue">
-            <img src="" alt="" class="blue__image">
+            <div class="blue">
+                <img src="" alt="" class="blue__image">
 
-            <h2>
-            How we help tackle these <span>challenges</span> ?
-            </h2>
+                <h2>
+                How we help tackle these <span>challenges</span> ?
+                </h2>
 
-            <div class="blue__item">
-                <div class="blue__item__box box-bg">
-                 </div>
-
-                <div class="blue__item__box">
-                    <div class="box-title">
-                    <i class="fas fa-chart-line"></i>
-                        <h2>DATAFACTORY</h2>
-                    </div>
-
-                    <p>
-                     Build your next generation data warehouse automation platform with its unique low-code/no-code approach.
-                     Accelerate your business today and generate untapped value from your organization's data.
-                    </p> <br>
-
-                    <div class="infos">
-                        <div class="infos__info">
-                            <div class="icon">
-                                <i class="fas fa-lock"></i>
-                                </div>
-                                <p>
-                                Manage and orchestrate
-                                </p>
-                        </div>
-
-                        <div class="infos__info">
-                            <div class="icon">
-                                <i class="fas fa-lock"></i>
-                                </div>
-                                <p>
-                                Manage and orchestrate
-                                </p>
-                        </div>
-
-                        <div class="infos__info">
-                            <div class="icon">
-                                <i class="fas fa-lock"></i>
-                                </div>
-                                <p>
-                                Manage and orchestrate
-                                </p>
-                        </div>
-
-                    </div>
-
-                    <button class='btn btn-orange'>
-                        Decouvrir la solution
-                    </button>
-                </div>
-            </div>
-
-            <div class="blue__item">
                 <div class="blue__item">
-                        <div class="blue__item__box box-left">
+                    <div class="blue__item__box box-bg">
+                    </div>
+
+                    <div class="blue__item__box">
                         <div class="box-title">
                         <i class="fas fa-chart-line"></i>
-                            <h2>PROPILOT</h2>
+                            <h2>DATAFACTORY</h2>
                         </div>
 
-                    <p>
-                    Plan, do, check and align all your
-                    strategic plans in one single platform designed and
-                    built for modern and efficient organizations. No more spreadsheets
-                    sent via emails or time wasted for reconciliation. Focus on what really
-                    matters, achieving your goals.
-                    </p>
+                        <p>
+                        Build your next generation data warehouse automation platform with its unique low-code/no-code approach.
+                        Accelerate your business today and generate untapped value from your organization's data.
+                        </p> <br>
 
-                    <div class="infos">
-                        <div class="infos__info">
-                            <div class="icon">
-                                <i class="fas fa-lock"></i>
-                                </div>
-                                <p>
-                                Manage and orchestrate
-                                </p>
+                        <div class="infos">
+                            <div class="infos__info">
+                                <div class="icon">
+                                    <i class="fas fa-lock"></i>
+                                    </div>
+                                    <p>
+                                    Manage and orchestrate
+                                    </p>
+                            </div>
+
+                            <div class="infos__info">
+                                <div class="icon">
+                                    <i class="fas fa-lock"></i>
+                                    </div>
+                                    <p>
+                                    Manage and orchestrate
+                                    </p>
+                            </div>
+
+                            <div class="infos__info">
+                                <div class="icon">
+                                    <i class="fas fa-lock"></i>
+                                    </div>
+                                    <p>
+                                    Manage and orchestrate
+                                    </p>
+                            </div>
+
                         </div>
 
-                        <div class="infos__info">
-                            <div class="icon">
-                                <i class="fas fa-lock"></i>
-                                </div>
-                                <p>
-                                Manage and orchestrate
-                                </p>
-                        </div>
-
-                        <div class="infos__info">
-                            <div class="icon">
-                                <i class="fas fa-lock"></i>
-                                </div>
-                                <p>
-                                Manage and orchestrate
-                                </p>
-                        </div>
-
+                        <button class='btn btn-orange'>
+                            Decouvrir la solution
+                        </button>
                     </div>
-                    <button class='btn btn-orange'>
-                        Learn more about ProPilot
-                    </button>
+                </div>
+
+                <div class="blue__item">
+                    <div class="blue__item">
+                            <div class="blue__item__box box-left">
+                            <div class="box-title">
+                            <i class="fas fa-chart-line"></i>
+                                <h2>PROPILOT</h2>
+                            </div>
+
+                        <p>
+                        Plan, do, check and align all your
+                        strategic plans in one single platform designed and
+                        built for modern and efficient organizations. No more spreadsheets
+                        sent via emails or time wasted for reconciliation. Focus on what really
+                        matters, achieving your goals.
+                        </p>
+
+                        <div class="infos">
+                            <div class="infos__info">
+                                <div class="icon">
+                                    <i class="fas fa-lock"></i>
+                                    </div>
+                                    <p>
+                                    Manage and orchestrate
+                                    </p>
+                            </div>
+
+                            <div class="infos__info">
+                                <div class="icon">
+                                    <i class="fas fa-lock"></i>
+                                    </div>
+                                    <p>
+                                    Manage and orchestrate
+                                    </p>
+                            </div>
+
+                            <div class="infos__info">
+                                <div class="icon">
+                                    <i class="fas fa-lock"></i>
+                                    </div>
+                                    <p>
+                                    Manage and orchestrate
+                                    </p>
+                            </div>
 
                         </div>
+                        <button class='btn btn-orange'>
+                            Learn more about ProPilot
+                        </button>
+
+                            </div>
+                    </div>
                 </div>
             </div>
-        </div>
         </section>
 
         <section>

@@ -70,39 +70,24 @@ a {
   font-weight: 600;
 }
 
-.tab {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  display: none;
-}
-.tab__items {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.hero {
-  background: url("public/img/illustration-data-management.png");
-  background: linear-gradient(89.16deg, #072038 1.27%, #0A355F 99.82%);
-}
-.hero .hero__top {
+.top {
   background-color: white;
   text-align: center;
 }
-.hero .hero__top p a {
+.top p a {
   color: #26C1D9;
   font-weight: bold;
 }
-.hero .nav {
-  height: 60px;
+
+.nav {
+  height: 40px;
   padding: 10px;
-  padding-top: 15px;
+  padding-top: 0px;
+  margin: 0;
   background: linear-gradient(89.16deg, #072038 1.27%, #0A355F 99.82%);
   width: 100%;
 }
-.hero .nav__content {
+.nav__menu {
   width: 90%;
   margin: auto;
   display: flex;
@@ -110,48 +95,83 @@ a {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.hero .nav__content ul {
+.nav__menu ul {
   margin: auto 0;
 }
-.hero .nav__content ul li {
+.nav__menu ul li {
   color: white;
   display: inline;
   margin: 15px;
   cursor: pointer;
   padding: 10px;
 }
-.hero .nav__content ul li a {
+.nav__menu ul li a {
   color: white;
   font-weight: bold;
 }
-.hero .nav__content ul li a i {
+.nav__menu ul li a i {
   margin: 5px auto auto 5px;
 }
-.hero .nav__content ul li:hover {
+.nav__menu ul li:hover {
   background-color: #072038;
 }
-.hero .nav__content .buttons {
+.nav__menu .buttons {
   float: right;
   display: table;
 }
-.hero .nav__content .buttons .btn {
+.nav__menu .buttons .btn {
   display: table-cell;
   margin: 15px 15px auto auto;
   text-align: center;
   vertical-align: middle;
 }
-.hero .nav__content .buttons p {
+.nav__menu .buttons p {
   color: #26C1D9;
   font-weight: bold;
   display: table-cell;
   text-align: center;
   margin-left: 15px;
-  margin-top: 15px;
+  margin-top: 30px;
   vertical-align: middle;
 }
-.hero .nav__content .buttons p i {
+.nav__menu .buttons p i {
   color: #26C1D9;
   margin-left: 10px;
+}
+.nav .nav__cards {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: auto;
+}
+.nav .nav__cards__card {
+  flex: 1;
+  display: block;
+  margin: 10px;
+}
+.nav .nav__cards__card span {
+  color: red;
+}
+.nav .nav__cards__card p {
+  color: #0D4048;
+}
+
+.nav-item {
+  background: white;
+  display: block;
+  text-align: left;
+}
+.nav-item .nav__menu ul li {
+  color: #072038;
+}
+.nav-item .nav__menu ul li a {
+  color: #072038;
+}
+
+.hero {
+  background: linear-gradient(89.16deg, #072038 1.27%, #0A355F 99.82%);
 }
 .hero__main {
   display: flex;

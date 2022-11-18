@@ -99,8 +99,6 @@ a{
     border-color: $white;
 }
 
-
-
 .btn-circle i{
     color: $black;
     display: table-cell;
@@ -108,108 +106,137 @@ a{
     font-weight: 600;
 }
 
-.tab{
-    @include flex();
-    display: none;
+.top{
+    background-color: $white;
+    text-align: center;
 
-    &__items{
-        @include flex();
-
-        &__item{
-
+    p{
+        a{
+            color: $cyan;
+            font-weight: bold;
         }
     }
 }
 
-.hero{
-    background: url('public/img/illustration-data-management.png');
+.nav{
+    height: 40px;
+    padding: 10px;
+    padding-top: 0px;
+    margin: 0;
     background: linear-gradient(89.16deg, #072038 1.27%, #0A355F 99.82%);
+    width: 100%;
 
-    .hero__top{
-        background-color: $white;
-        text-align: center;
+    &__menu{
+        width: 90%;
+        margin: auto;
+       @include flex();
 
-        p{
-            a{
-                color: $cyan;
-                font-weight: bold;
+        a{
+            img{
+
             }
         }
-    }
-    .nav{
-        height: 60px;
-        padding: 10px;
-        padding-top: 15px;
-        background: linear-gradient(89.16deg, #072038 1.27%, #0A355F 99.82%);
 
-        width: 100%;
+        ul{
+            margin: auto 0;
+            li{
+                color: $white;
+                display: inline;
+                margin: 15px;
+                cursor: pointer;
+                padding: 10px;
 
-        &__content{
-            width: 90%;
-            margin: auto;
-           @include flex();
-
-            a{
-                img{
-
-                }
-            }
-
-            ul{
-                margin: auto 0;
-                li{
+                a{
                     color: $white;
-                    display: inline;
-                    margin: 15px;
-                    cursor: pointer;
-                    padding: 10px;
-
-                    a{
-                        color: $white;
-                        font-weight: bold;
-
-                        i{
-                            margin: 5px auto auto 5px;
-                        }
-                    }
-                }
-
-                li:hover{
-                    background-color: $black;
-                }
-            }
-
-            .buttons{
-                float: right;
-                display: table;
-
-                .btn{
-                    display: table-cell;
-                    margin: 15px 15px auto auto;
-                    text-align: center;
-                    vertical-align: middle;
-                }
-
-                p{
-                    color: $cyan;
                     font-weight: bold;
-                    display: table-cell;
-                    text-align: center;
-                    margin-left: 15px;
-                    margin-top: 15px;
-                    vertical-align: middle;
 
                     i{
-                        color: $cyan;
-                        margin-left: 10px
+                        margin: 5px auto auto 5px;
                     }
+                }
+            }
+
+            li:hover{
+                background-color: $black;
+            }
+        }
+
+        .buttons{
+            float: right;
+            display: table;
+
+            .btn{
+                display: table-cell;
+                margin: 15px 15px auto auto;
+                text-align: center;
+                vertical-align: middle;
+            }
+
+            p{
+                color: $cyan;
+                font-weight: bold;
+                display: table-cell;
+                text-align: center;
+                margin-left: 15px;
+                margin-top: 30px;
+                vertical-align: middle;
+
+                i{
+                    color: $cyan;
+                    margin-left: 10px
                 }
             }
         }
     }
 
 
-                &__main{
+
+    .nav__cards{
+        width: 90%;
+        @include flex();
+        margin: auto;
+
+        &__card{
+            flex: 1;
+            display: block;
+            margin: 10px;
+
+            span{
+                color: red;
+
+            }
+
+            p{
+                color: $cyan-light;
+            }
+        }
+    }
+}
+
+.nav-item{
+    background: $white;
+    display: block;
+    text-align: left;
+
+    .nav__menu{
+        ul{
+            li{
+                color: $black;
+
+                a{
+                    color: $black;
+                }
+            }
+        }
+    }
+}
+
+
+.hero{
+    background: linear-gradient(89.16deg, #072038 1.27%, #0A355F 99.82%);
+
+
+    &__main{
                     @include flex();
                     height: max-content;
                     width: 90%;
@@ -254,8 +281,8 @@ a{
                             margin: auto;
                         }
                     }
-                }
-            }
+        }
+     }
 
         section{
          background-color: $white;
