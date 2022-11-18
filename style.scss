@@ -1,6 +1,8 @@
 $white: white;
 $cyan: #26C1D9;
 $cyan-dark: #156B79;
+$cyan-light: #0D4048;
+$cyan-bg: #F0FDFF;
 $black: #072038;
 $orange: #FD7762;
 
@@ -83,33 +85,69 @@ a{
     border: 1px solid $cyan;
 }
 
-.tab{
-    @include flex()
+.btn-circle{
+    width: 40px;
+    text-align: center;
+    height: 40px;
+    border-radius: 30px;
+    display: table;
+    border: 1px solid $black;
+    cursor: pointer;
 }
 
-.nav{
-    width: 80%;
-    height: max-content;
-    margin: auto;
-    &__content{
-        width: 80%;
-        margin: auto;
+.btn-white{
+    border-color: $white;
+}
 
 
-        ul{
+
+.btn-circle i{
+    color: $black;
+    display: table-cell;
+    vertical-align: middle;
+    font-weight: 600;
+}
+
+.tab{
+    @include flex();
+    display: none;
+
+    &__items{
+        @include flex();
+
+        &__item{
 
         }
     }
 }
 
-
 .hero{
+    background: url('public/img/illustration-data-management.png');
+    background: linear-gradient(89.16deg, #072038 1.27%, #0A355F 99.82%);
+
+    .hero__top{
+        background-color: $white;
+        text-align: center;
+
+        p{
+            a{
+                color: $cyan;
+                font-weight: bold;
+            }
+        }
+    }
     .nav{
+        height: 60px;
+        padding: 10px;
+        padding-top: 15px;
+        background: linear-gradient(89.16deg, #072038 1.27%, #0A355F 99.82%);
+
         width: 100%;
 
         &__content{
-            width: 80%;
+            width: 90%;
             margin: auto;
+           @include flex();
 
             a{
                 img{
@@ -118,67 +156,110 @@ a{
             }
 
             ul{
+                margin: auto 0;
                 li{
                     color: $white;
+                    display: inline;
+                    margin: 15px;
+                    cursor: pointer;
+                    padding: 10px;
 
                     a{
-                        color: $white
+                        color: $white;
+                        font-weight: bold;
+
+                        i{
+                            margin: 5px auto auto 5px;
+                        }
                     }
+                }
+
+                li:hover{
+                    background-color: $black;
                 }
             }
 
             .buttons{
                 float: right;
-                @include flex();
+                display: table;
 
-                button{
-                    background-color: $cyan;
-                    color: $black;
+                .btn{
+                    display: table-cell;
+                    margin: 15px 15px auto auto;
+                    text-align: center;
+                    vertical-align: middle;
                 }
-            }
-        }
-    }
 
-
-
-
-    &__blocks{
-        height: max-content;
-        background: linear-gradient(89.16deg, #072038 1.27%, #0A355F 99.82%);
-
-        &__block{
-            width: 90%;
-            margin: auto;
-            padding-top: 80px;
-            padding-left: 0;
-            color: $white;
-
-            h1{
-                font-weight: 600;
-font-size: 72px;
-
-                span{
+                p{
                     color: $cyan;
+                    font-weight: bold;
+                    display: table-cell;
+                    text-align: center;
+                    margin-left: 15px;
+                    margin-top: 15px;
+                    vertical-align: middle;
+
+                    i{
+                        color: $cyan;
+                        margin-left: 10px
+                    }
+                }
+            }
+        }
+    }
+
+
+                &__main{
+                    @include flex();
+                    height: max-content;
+                    width: 90%;
+                    margin: auto;
+
+                    &__block{
+                        text-align: left;
+                        padding-bottom: 50px;
+                        padding-left: 0;
+                        color: $white;
+                        margin: auto;
+                        flex: 1;
+
+                        h1{
+                            font-weight: 600;
+                            font-size: 72px;
+
+                            span{
+                                color: $cyan;
+                            }
+                        }
+
+                        p{
+                            @include text();
+                            color: $white;
+                            width: 50%;
+                            text-align: left;
+                            margin: 20px auto 35px 0;
+                        }
+
+                        .images{
+                            margin: 40px auto;
+                            img{
+                                width: 120px;
+                                height: auto;
+                                margin: auto 10px 0 0;
+                            }
+                        }
+
+                        .image{
+                            width: 500px;
+                            margin: auto;
+                        }
+                    }
                 }
             }
 
-            p{
-                align-self: stretch;
-                font-family: 'Porpora';
-                font-style: normal;
-                font-weight: 400;
-            }
+        section{
+         background-color: $white;
 
-            ul{}
-
-
-
-        }
-    }
-}
-
-section{
-    background-color: $white;
         .about{
             margin: 20px auto;
             @include flex();
@@ -272,7 +353,7 @@ section{
                 align-items: center;
                 padding: 0px;
                 gap: 16px;
-                width: 1280px;
+                width: 90%;
                 height: 784px;
                 background: #FFFFFF;
                 border-radius: 25px;
@@ -291,7 +372,13 @@ section{
                     text-align: left;
 
                   .box-title{
-                    @include flex();
+                    display: table;
+
+                    i{
+                        color: $orange;
+                        font-size: 3em;
+                        display: table-cell;
+                    }
 
                     h2{
                         width: 384px;
@@ -308,6 +395,35 @@ section{
                         font-weight: 400;
                         font-size: 18px;
                         line-height: 24px;
+                    }
+
+                    .infos{
+                        display: block;
+
+                        &__info{
+                            margin: 20px auto;
+                            @include flex();
+                            display: inline-flex;
+
+                            .icon{
+                                width: 30px;
+                                text-align: center;
+                                display: table;
+                                height:30px;
+                                background-color: $cyan-bg;
+
+                                i{
+                                    color: $cyan-light;
+                                    display: table-cell;
+                                    vertical-align: middle;
+
+                                }
+                            }
+
+                            p{
+                                margin: auto 50px;
+                            }
+                        }
                     }
                 }
 
@@ -331,20 +447,19 @@ section{
                 text-align: center;
 
                 span{
-                    font-size: 1em;
-                    font-weight: 500;
+                    font-size: 0.8em;
+                    font-weight: 400;
                 }
             }
 
             &__slider{
-                display: flex;
-                flex-direction: row;
+                @include flex();
                 align-items: flex-start;
                 padding: 0px;
                 gap: 32px;
                 isolation: isolate;
-                width: 1280px;
-                height: 600px;
+                width: 80%;
+                height: 500px;
                 background: $black;
                 border-radius: 25px;
                 flex: none;
@@ -354,14 +469,64 @@ section{
                 z-index: 2;
                 margin: auto;
 
+
                 .slide{
                     flex: 1;
-                    @include flex(column);
+                    display: block;
                     color: $white;
+                    padding-top: 80px;
+                    overflow: hidden;
+                    border-top-left-radius: 25px;
+                    border-bottom-left-radius: 25px;
+                    text-align: left;
 
-                    .slide1{
+                    img{
+                        width: 150px;
+                    }
+
+                   .testimony__author{
+                    color: $cyan;
+                    font-size: 1.1em;
+                   }
+
+                    .description{
+                        width: 496px;
+                        height: 160px;
+                        font-family: 'Outfit';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 36px;
+                        line-height: 40px;
+                        color: #FFFFFF;
+                        flex: none;
+                        order: 2;
+                        align-self: stretch;
+                        flex-grow: 0;
+                    }
+
+                    .buttons{
+                        width: 90px;
+                        margin: 40px auto auto 0;
+                        @include flex();
+
+                        .btn-circle{
+                            border-color: $white;
+                            i{
+                                color: $white;
+                            }
+                        }
 
                     }
+                }
+
+                .video{
+                    padding-top: 0;
+                    height: 100%;
+                    overflow: hidden;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background: url('public/img/Casclient-Exki.jpeg')
                 }
             }
         }
@@ -383,7 +548,7 @@ section{
 
             .cards{
                 @include flex();
-                width: 95%;
+                width: 90%;
                 margin: 50px auto;
 
                 &__card{
@@ -392,8 +557,9 @@ section{
                     margin: 10px;
                     flex: 1;
                     text-align: left;
-                    padding-left: 10px;
+                    padding-left: 15px;
                     padding-top: 30px;
+                    padding-bottom: 50px;
 
                     .category{
                         width: 120px;
@@ -405,6 +571,7 @@ section{
                     .extract{
                         text-align: left;
                         margin: 60px auto auto 0;
+                        width: 90%;
                     }
 
                     .extract-bold{
@@ -414,28 +581,41 @@ section{
 
                     .more{
                         @include flex();
+                        margin: 60px auto auto 0;
+                        width: 90%;
 
                         img{
-
+                            border-radius: 30px;
+                            width: 50px;
+                            height: 50px;
                         }
+
                         .blog-author{
-
+                            color: $black;
+                            font-weight: 500;
+                            width: 60%;
+                                margin: 5px auto auto 5px;
                         }
+
+                        .btn-circle{
+                            margin-top: 5px;
+                        }
+
                     }
                 }
             }
         }
 
         .demo{
-            width: 90%;
+            width: 80%;
             margin: auto;
                 height: 498px;
            background-color: $black;
-
-
+           @include flex();
 
            &__text{
                 padding-top: 40px;
+                width: 55%;
                 h3{
                     font-family: 'Outfit';
                     font-style: normal;
@@ -464,11 +644,18 @@ section{
                     flex-grow: 0;
                 }
             }
+
+            &__icons{
+                width: 45%;
+                height: 100%;
+                background: url('public/img/cta-illustation-corporate.png');
+            }
         }
     }
 
         .footer{
-            margin: 60px auto;
+            margin: 90px auto 0 auto;
+            background-color: red;
             &__up{
                 width: 90%;
                 margin: auto;
@@ -506,6 +693,7 @@ section{
                 margin: 60px auto;
                 padding-top: 40px;
                 background: #F7FAFB;
+                background-color: purple;
 
                 ul{
                     margin: 10px auto auto 30px;
@@ -524,4 +712,20 @@ section{
                     }
                 }
             }
+        }
+
+        @media ( min-width : 1280px ) {
+            .definition{}
+        }
+
+        @media ( min-width : 1024px ) {
+            .definition{}
+        }
+
+        @media ( min-width : 768px ) {
+            .definition{}
+        }
+
+        @media ( min-width : 350px ) {
+            .definition{}
         }

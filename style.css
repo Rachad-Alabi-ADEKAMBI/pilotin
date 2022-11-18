@@ -49,74 +49,166 @@ a {
   border: 1px solid #26C1D9;
 }
 
+.btn-circle {
+  width: 40px;
+  text-align: center;
+  height: 40px;
+  border-radius: 30px;
+  display: table;
+  border: 1px solid #072038;
+  cursor: pointer;
+}
+
+.btn-white {
+  border-color: white;
+}
+
+.btn-circle i {
+  color: #072038;
+  display: table-cell;
+  vertical-align: middle;
+  font-weight: 600;
+}
+
 .tab {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
+  display: none;
 }
-
-.nav {
-  width: 80%;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
-  margin: auto;
-}
-.nav__content {
-  width: 80%;
-  margin: auto;
-}
-.hero .nav {
-  width: 100%;
-}
-.hero .nav__content {
-  width: 80%;
-  margin: auto;
-}
-.hero .nav__content ul li {
-  color: white;
-}
-.hero .nav__content ul li a {
-  color: white;
-}
-.hero .nav__content .buttons {
-  float: right;
+.tab__items {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.hero .nav__content .buttons button {
-  background-color: #26C1D9;
-  color: #072038;
+.hero {
+  background: url("public/img/illustration-data-management.png");
+  background: linear-gradient(89.16deg, #072038 1.27%, #0A355F 99.82%);
 }
-.hero__blocks {
+.hero .hero__top {
+  background-color: white;
+  text-align: center;
+}
+.hero .hero__top p a {
+  color: #26C1D9;
+  font-weight: bold;
+}
+.hero .nav {
+  height: 60px;
+  padding: 10px;
+  padding-top: 15px;
+  background: linear-gradient(89.16deg, #072038 1.27%, #0A355F 99.82%);
+  width: 100%;
+}
+.hero .nav__content {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.hero .nav__content ul {
+  margin: auto 0;
+}
+.hero .nav__content ul li {
+  color: white;
+  display: inline;
+  margin: 15px;
+  cursor: pointer;
+  padding: 10px;
+}
+.hero .nav__content ul li a {
+  color: white;
+  font-weight: bold;
+}
+.hero .nav__content ul li a i {
+  margin: 5px auto auto 5px;
+}
+.hero .nav__content ul li:hover {
+  background-color: #072038;
+}
+.hero .nav__content .buttons {
+  float: right;
+  display: table;
+}
+.hero .nav__content .buttons .btn {
+  display: table-cell;
+  margin: 15px 15px auto auto;
+  text-align: center;
+  vertical-align: middle;
+}
+.hero .nav__content .buttons p {
+  color: #26C1D9;
+  font-weight: bold;
+  display: table-cell;
+  text-align: center;
+  margin-left: 15px;
+  margin-top: 15px;
+  vertical-align: middle;
+}
+.hero .nav__content .buttons p i {
+  color: #26C1D9;
+  margin-left: 10px;
+}
+.hero__main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  background: linear-gradient(89.16deg, #072038 1.27%, #0A355F 99.82%);
-}
-.hero__blocks__block {
   width: 90%;
   margin: auto;
-  padding-top: 80px;
+}
+.hero__main__block {
+  text-align: left;
+  padding-bottom: 50px;
   padding-left: 0;
   color: white;
+  margin: auto;
+  flex: 1;
 }
-.hero__blocks__block h1 {
+.hero__main__block h1 {
   font-weight: 600;
   font-size: 72px;
 }
-.hero__blocks__block h1 span {
+.hero__main__block h1 span {
   color: #26C1D9;
 }
-.hero__blocks__block p {
-  align-self: stretch;
+.hero__main__block p {
   font-family: "Porpora";
   font-style: normal;
   font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #072038;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+  color: white;
+  width: 50%;
+  text-align: left;
+  margin: 20px auto 35px 0;
 }
+.hero__main__block .images {
+  margin: 40px auto;
+}
+.hero__main__block .images img {
+  width: 120px;
+  height: auto;
+  margin: auto 10px 0 0;
+}
+.hero__main__block .image {
+  width: 500px;
+  margin: auto;
+}
+
 section {
   background-color: white;
 }
@@ -202,7 +294,7 @@ section .blue__item {
   align-items: center;
   padding: 0px;
   gap: 16px;
-  width: 1280px;
+  width: 90%;
   height: 784px;
   background: #FFFFFF;
   border-radius: 25px;
@@ -221,10 +313,12 @@ section .blue__item__box {
   text-align: left;
 }
 section .blue__item__box .box-title {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: table;
+}
+section .blue__item__box .box-title i {
+  color: #FD7762;
+  font-size: 3em;
+  display: table-cell;
 }
 section .blue__item__box .box-title h2 {
   width: 384px;
@@ -240,6 +334,32 @@ section .blue__item__box p {
   font-size: 18px;
   line-height: 24px;
 }
+section .blue__item__box .infos {
+  display: block;
+}
+section .blue__item__box .infos__info {
+  margin: 20px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  display: inline-flex;
+}
+section .blue__item__box .infos__info .icon {
+  width: 30px;
+  text-align: center;
+  display: table;
+  height: 30px;
+  background-color: #F0FDFF;
+}
+section .blue__item__box .infos__info .icon i {
+  color: #0D4048;
+  display: table-cell;
+  vertical-align: middle;
+}
+section .blue__item__box .infos__info p {
+  margin: auto 50px;
+}
 section .blue__item .box-bg {
   background: url(public/img/Datafactory6@2x.png);
 }
@@ -253,18 +373,20 @@ section .testimonials h2 {
   text-align: center;
 }
 section .testimonials h2 span {
-  font-size: 1em;
-  font-weight: 500;
+  font-size: 0.8em;
+  font-weight: 400;
 }
 section .testimonials__slider {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
   align-items: flex-start;
   padding: 0px;
   gap: 32px;
   isolation: isolate;
-  width: 1280px;
-  height: 600px;
+  width: 80%;
+  height: 500px;
   background: #072038;
   border-radius: 25px;
   flex: none;
@@ -276,11 +398,57 @@ section .testimonials__slider {
 }
 section .testimonials__slider .slide {
   flex: 1;
+  display: block;
+  color: white;
+  padding-top: 80px;
+  overflow: hidden;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  text-align: left;
+}
+section .testimonials__slider .slide img {
+  width: 150px;
+}
+section .testimonials__slider .slide .testimony__author {
+  color: #26C1D9;
+  font-size: 1.1em;
+}
+section .testimonials__slider .slide .description {
+  width: 496px;
+  height: 160px;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 40px;
+  color: #FFFFFF;
+  flex: none;
+  order: 2;
+  align-self: stretch;
+  flex-grow: 0;
+}
+section .testimonials__slider .slide .buttons {
+  width: 90px;
+  margin: 40px auto auto 0;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+section .testimonials__slider .slide .buttons .btn-circle {
+  border-color: white;
+}
+section .testimonials__slider .slide .buttons .btn-circle i {
   color: white;
+}
+section .testimonials__slider .video {
+  padding-top: 0;
+  height: 100%;
+  overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: url("public/img/Casclient-Exki.jpeg");
 }
 section .blog {
   text-align: center;
@@ -307,7 +475,7 @@ section .blog .cards {
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 95%;
+  width: 90%;
   margin: 50px auto;
 }
 section .blog .cards__card {
@@ -316,8 +484,9 @@ section .blog .cards__card {
   margin: 10px;
   flex: 1;
   text-align: left;
-  padding-left: 10px;
+  padding-left: 15px;
   padding-top: 30px;
+  padding-bottom: 50px;
 }
 section .blog .cards__card .category {
   width: 120px;
@@ -328,6 +497,7 @@ section .blog .cards__card .category {
 section .blog .cards__card .extract {
   text-align: left;
   margin: 60px auto auto 0;
+  width: 90%;
 }
 section .blog .cards__card .extract-bold {
   font-weight: 600;
@@ -338,15 +508,36 @@ section .blog .cards__card .more {
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin: 60px auto auto 0;
+  width: 90%;
+}
+section .blog .cards__card .more img {
+  border-radius: 30px;
+  width: 50px;
+  height: 50px;
+}
+section .blog .cards__card .more .blog-author {
+  color: #072038;
+  font-weight: 500;
+  width: 60%;
+  margin: 5px auto auto 5px;
+}
+section .blog .cards__card .more .btn-circle {
+  margin-top: 5px;
 }
 section .demo {
-  width: 90%;
+  width: 80%;
   margin: auto;
   height: 498px;
   background-color: #072038;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 section .demo__text {
   padding-top: 40px;
+  width: 55%;
 }
 section .demo__text h3 {
   font-family: "Outfit";
@@ -374,9 +565,15 @@ section .demo__text p {
   align-self: stretch;
   flex-grow: 0;
 }
+section .demo__icons {
+  width: 45%;
+  height: 100%;
+  background: url("public/img/cta-illustation-corporate.png");
+}
 
 .footer {
-  margin: 60px auto;
+  margin: 90px auto 0 auto;
+  background-color: red;
 }
 .footer__up {
   width: 90%;
@@ -418,6 +615,7 @@ section .demo__text p {
   margin: 60px auto;
   padding-top: 40px;
   background: #F7FAFB;
+  background-color: purple;
 }
 .footer__bottom ul {
   margin: 10px auto auto 30px;

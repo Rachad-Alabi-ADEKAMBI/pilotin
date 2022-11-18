@@ -6,6 +6,10 @@
     <link href="style.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pilotin - Accueil</title>
+    <script
+      src="https://kit.fontawesome.com/b14771b76e.js"
+      crossorigin="anonymous"
+    ></script>
     <link href='https://fonts.googleapis.com/css?family=Outfit' rel='stylesheet'>
 
 </head>
@@ -15,13 +19,13 @@
                 Our products
             </p>
 
-            <div class="tabs__items">
+            <div class="tab__items">
                 <div class="tabs__items__item">
                     <i></i> Data factory <br>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas molestiae porro
                 </div>
 
-                <div class="tabs__items__item">
+                <div class="tab__items__item">
                     <i></i> Data factory <br>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas molestiae porro
                 </div>
@@ -30,25 +34,32 @@
 
 
         <div class="hero">
+        <div class="hero__top">
+                    <p>
+                        Maintenance prevue le 17/08/2022
+                            <a href="">Recevoir une alerte</a>
+
+                    </p>
+                </div>
 
             <nav class="nav">
                 <div class="nav__content">
                     <a href="public/img/Logo_blanc.svg" class='logo'>
-                        img
+                        <img src="public/img/Logo_blanc.svg" alt="">
                     </a>
                     <ul>
                             <li>
                                 <a href="">
-                                Products
+                                Products <i class="fas fa-chevron-down"></i>
                                 </a>
                             </li>
 
                             <li>
-                                Ressources
+                                Ressources <i class="fas fa-chevron-down"></i>
                             </li>
 
                             <li>
-                                Company
+                                Company <i class="fas fa-chevron-down"></i>
                             </li>
                     </ul>
 
@@ -58,22 +69,14 @@
                         </button>
 
                         <p>
-                            FR
+                            FR <i class="fas fa-chevron-down"></i>
                         </p>
                     </div>
                 </div>
             </nav>
 
-                <div class="hero__top">
-                    <p>
-                        Maintenance prevue le 17/08/2022 <span>
-                            Recevoir une alerte
-                        </span>
-                    </p>
-                </div>
-
-                <div class="hero__blocks">
-                    <div class="hero__blocks__block">
+                <div class="hero__main">
+                    <div class="hero__main__block">
                         <h1>
                             Meet the future <br>
                             of your <br>
@@ -90,19 +93,17 @@
                             Let's talk
                         </button>
 
-                        <ul>
-                            <li>
-                                <img src="" alt="">
-                            </li>
+                        <div class="images">
+                        <img src="public/img/logos/bnp.png" alt="">
+                             <img src="public/img/logos/thales.png" alt="">
+                                <img src="public/img/logos/axa.png" alt="">
+                                <img src="public/img/logos/republique-francaise.png" alt="">
 
-                            <li>
-                                img
-                            </li>
-                        </ul>
+                        </div>
                     </div>
 
-                    <div class="hero__blocks__block">
-                        <img src="" alt="">
+                    <div class="hero__main__block">
+                        <img src="public/img/illustration-data-management.png" alt="" class='image'>
                     </div>
                 </div>
         </div>
@@ -117,7 +118,7 @@
 
             <div class="about__item">
                 <p>
-                    In today’s perpetual disruption and digital transformation era, volume of data managed expand exponentially and change the way organizations do business. This comes as little surprise and induces a rising demand for data-driven customer experiences, together with changing data volume/sources and quality requirements.
+                    In today's perpetual disruption and digital transformation era, volume of data managed expand exponentially and change the way organizations do business. This comes as little surprise and induces a rising demand for data-driven customer experiences, together with changing data volume/sources and quality requirements.
                     However, company runs their processes over hundreds of systems that don't play nice together, leaving a lot of room for inefficiencies to hide that are silent killers to your business performance.
                     While many companies state they want to be data-driven, most have only begun to scratch the surface in terms of realizing the full potential of this rich resource.
                     Pilot'in recognizes the right for organizations to become truly data-driven, moving  from a fragmented view to a global vision and drive their strategy even further.
@@ -145,7 +146,7 @@
 
                 <div class="blue__item__box">
                     <div class="box-title">
-                        <img src="" alt="">
+                    <i class="fas fa-chart-line"></i>
                         <h2>DATAFACTORY</h2>
                     </div>
 
@@ -154,15 +155,35 @@
                      Accelerate your business today and generate untapped value from your organization's data.
                     </p> <br>
 
-                    <ul>
-                        <li>
-                        Manage and orchestrate
-                        </li>
+                    <div class="infos">
+                        <div class="infos__info">
+                            <div class="icon">
+                                <i class="fas fa-lock"></i>
+                                </div>
+                                <p>
+                                Manage and orchestrate
+                                </p>
+                        </div>
 
-                        <li>
-                        Dispatch powerd elements
-                        </li>
-                    </ul>
+                        <div class="infos__info">
+                            <div class="icon">
+                                <i class="fas fa-lock"></i>
+                                </div>
+                                <p>
+                                Manage and orchestrate
+                                </p>
+                        </div>
+
+                        <div class="infos__info">
+                            <div class="icon">
+                                <i class="fas fa-lock"></i>
+                                </div>
+                                <p>
+                                Manage and orchestrate
+                                </p>
+                        </div>
+
+                    </div>
 
                     <button class='btn btn-orange'>
                         Decouvrir la solution
@@ -174,7 +195,7 @@
                 <div class="blue__item">
                         <div class="blue__item__box box-left">
                         <div class="box-title">
-                            <img src="" alt="">
+                        <i class="fas fa-chart-line"></i>
                             <h2>PROPILOT</h2>
                         </div>
 
@@ -186,13 +207,35 @@
                     matters, achieving your goals.
                     </p>
 
-                    <ul>
-                        <li><img src="" alt="">Connect strategic plans to execution</li>
-                        <li><img src="" alt="">Know the status of plans </li>
-                        <li> <img src="" alt=""> Adapt quickly to changes </li>
-                        <li><img src="" alt=""> Reward real achiviers</li>
-                    </ul>
+                    <div class="infos">
+                        <div class="infos__info">
+                            <div class="icon">
+                                <i class="fas fa-lock"></i>
+                                </div>
+                                <p>
+                                Manage and orchestrate
+                                </p>
+                        </div>
 
+                        <div class="infos__info">
+                            <div class="icon">
+                                <i class="fas fa-lock"></i>
+                                </div>
+                                <p>
+                                Manage and orchestrate
+                                </p>
+                        </div>
+
+                        <div class="infos__info">
+                            <div class="icon">
+                                <i class="fas fa-lock"></i>
+                                </div>
+                                <p>
+                                Manage and orchestrate
+                                </p>
+                        </div>
+
+                    </div>
                     <button class='btn btn-orange'>
                         Learn more about ProPilot
                     </button>
@@ -211,16 +254,14 @@
                 </h2>
 
                 <div class="testimonials__slider">
-                    <div class="video">
+                    <div class="slide video">
 
                     </div>
 
                     <div class="slide">
-                        <div class="slide1">
-                            EXX
-                        </div>
+                        <img src="public/img/EXKi-2.png" alt="">
 
-                        <p class="author">
+                        <p class="testimony__author">
                         Thierry Soubestre
                         </p>
 
@@ -231,12 +272,12 @@
                         </p>
 
                         <div class="buttons">
-                            <div class="button">
-                                ljil
+                            <div class="btn-circle">
+                            <i class="fas fa-arrow-left"></i>
                             </div>
 
-                            <div class="button">
-                                bhs
+                            <div class="btn-circle">
+                            <i class="fas fa-arrow-right"></i>
                             </div>
                         </div>
                     </div>
@@ -274,13 +315,13 @@
                     </p>
 
                     <div class="more">
-                        <img src="" alt="">
-                        <p class="blog-author">
+                        <img src="public/img/placeholder-team-03.png" alt="">
+                        <div class="blog-author">
                         Julien Dereumaux - Capitaine de Pilot’in
-                        </p>
+                        </div>
 
-                        <div class="btn">
-
+                        <div class="btn-circle">
+                            <i class="fas fa-arrow-right"></i>
                         </div>
                     </div>
                 </div>
@@ -301,13 +342,13 @@
                     </p>
 
                     <div class="more">
-                        <img src="" alt="">
-                        <p class="blog-author">
+                        <img src="public/img/placeholder-team-03.png" alt="">
+                        <div class="blog-author">
                         Julien Dereumaux - Capitaine de Pilot’in
-                        </p>
+                        </div>
 
-                        <div class="btn">
-
+                        <div class="btn-circle">
+                            <i class="fas fa-arrow-right"></i>
                         </div>
                     </div>
                 </div>
@@ -328,13 +369,13 @@
                     </p>
 
                     <div class="more">
-                        <img src="" alt="">
-                        <p class="blog-author">
+                        <img src="public/img/placeholder-team-03.png" alt="">
+                        <div class="blog-author">
                         Julien Dereumaux - Capitaine de Pilot’in
-                        </p>
+                        </div>
 
-                        <div class="btn">
-
+                        <div class="btn-circle">
+                            <i class="fas fa-arrow-right"></i>
                         </div>
                     </div>
                 </div>
