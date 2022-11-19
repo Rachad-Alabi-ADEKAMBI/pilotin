@@ -37,6 +37,19 @@ a {
   font-size: 16px;
   line-height: 24px;
   cursor: pointer;
+  transition: 500ms ease-in-out;
+}
+
+.btn i {
+  display: none;
+}
+
+.btn:hover {
+  margin: 40px;
+  transform: scale(1.1);
+}
+.btn:hover i {
+  display: block;
 }
 
 .btn-orange {
@@ -86,6 +99,7 @@ a {
   margin: 0;
   background: linear-gradient(89.16deg, #072038 1.27%, #0A355F 99.82%);
   width: 100%;
+  z-index: -9999;
 }
 .nav__menu {
   width: 90%;
@@ -103,7 +117,8 @@ a {
   display: inline;
   margin: 15px;
   cursor: pointer;
-  padding: 10px;
+  padding: 5px;
+  border-radius: 10px;
 }
 .nav__menu ul li a {
   color: white;
@@ -145,6 +160,8 @@ a {
   justify-content: space-between;
   flex-wrap: wrap;
   margin: auto;
+  background-color: white;
+  z-index: 9999;
 }
 .nav .nav__cards__card {
   flex: 1;
@@ -154,15 +171,15 @@ a {
 .nav .nav__cards__card span {
   color: red;
 }
+.nav .nav__cards__card span i {
+  color: #FD7762;
+  display: none;
+  margin-right: 20px;
+}
 .nav .nav__cards__card p {
   color: #0D4048;
 }
 
-.nav-item {
-  background: white;
-  display: block;
-  text-align: left;
-}
 .nav-item .nav__menu ul li {
   color: #072038;
 }
@@ -170,8 +187,24 @@ a {
   color: #072038;
 }
 
+#nav1,
+#nav2 {
+  background: white;
+  z-index: 99999;
+  margin-bottom: 10px;
+  height: auto;
+  text-align: left;
+  display: none;
+  transition: 500ms ease-in-out;
+}
+#nav1 .nav__menu ul li:hover,
+#nav2 .nav__menu ul li:hover {
+  background-color: #F0FDFF;
+}
+
 .hero {
   background: linear-gradient(89.16deg, #072038 1.27%, #0A355F 99.82%);
+  padding-bottom: 80px;
 }
 .hero__main {
   display: flex;
@@ -227,6 +260,21 @@ a {
 .hero__main__block .image {
   width: 500px;
   margin: auto;
+}
+.hero__text {
+  width: 100%;
+  font-weight: 900;
+  transform: rotate(-2deg);
+  font-size: 7em;
+  word-spacing: 0.3em;
+}
+.hero__text span {
+  color: #26C1D9;
+  font-weight: 900;
+}
+.hero__text strong {
+  color: #072038;
+  font-weight: 900;
 }
 
 section {
@@ -286,7 +334,10 @@ section .blue img {
   margin-left: auto;
   margin-right: auto;
   top: -210px;
-  background: url(public/img/computer-screen-data-score-analyst.png);
+  background: url("public/img/computer-screen-data-score-analyst.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 section .blue h2 {
   height: 60px;
@@ -593,7 +644,6 @@ section .demo__icons {
 
 .footer {
   margin: 90px auto 0 auto;
-  background-color: red;
 }
 .footer__up {
   width: 90%;
@@ -649,4 +699,25 @@ section .demo__icons {
 }
 .footer__bottom p span {
   font-weight: bold;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .hero__main {
+    flex-direction: column;
+  }
+  section .blue img {
+    width: 300px;
+  }
+  section .blue h2 {
+    width: 70%;
+    text-align: center;
+    margin: auto;
+  }
+  section .blue__item {
+    flex-direction: column;
+    display: none;
+  }
+  section .about {
+    width: 50%;
+  }
 }/*# sourceMappingURL=style.css.map */

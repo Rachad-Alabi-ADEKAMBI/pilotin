@@ -22,36 +22,179 @@
                     </p>
                 </div>
 
-        <nav class="nav">
+        <nav class="nav" id='nav'>
             <div class="nav__menu">
                 <a href="public/img/Logo_blanc.svg" class='logo'>
                         <img src="public/img/Logo_blanc.svg" alt="">
                 </a>
                     <ul>
-                            <li>
+                            <li onclick="showNav1()" >
                                 <a href="">
                                 Products <i class="fas fa-chevron-down"></i>
                                 </a>
                             </li>
 
-                            <li>
+                            <li onclick="showNav2()">
                                 Ressources <i class="fas fa-chevron-down"></i>
                             </li>
 
-                            <li>
+                            <li onclick="showNav()">
                                 Company <i class="fas fa-chevron-down"></i>
                             </li>
                     </ul>
 
                     <div class="buttons">
-                        <button class='btn btn-cyan'>
-                            Free demo
-                        </button>
-
+                                               <button class='btn btn-cyan'>
+                                Free demo <i class="fas fa-chevron-down"></i>
+                            </button>
                         <p>
                             FR <i class="fas fa-chevron-down"></i>
                         </p>
                     </div>
+                </div>
+        </nav>
+
+        <nav class="nav nav-item" id='nav1' >
+                      <div class="nav__menu">
+                        <a href="index.php" class='logo'>
+                            <img src="public/img/Logo.svg" alt="">
+                        </a>
+                        <ul>
+                        <li onclick="showNav1()" >
+                                <a href="">
+                                Products <i class="fas fa-chevron-down"></i>
+                                </a>
+                            </li>
+
+                            <li onclick="showNav2()">
+                                Ressources <i class="fas fa-chevron-down"></i>
+                            </li>
+
+                            <li onclick="showNav()">
+                                Company <i class="fas fa-chevron-down"></i>
+                            </li>
+                        </ul>
+
+                        <div class="buttons">
+                            <button class='btn btn-cyan'>
+                                Free demo
+                            </button>
+
+                            <p>
+                                FR <i class="fas fa-chevron-down"></i>
+                            </p>
+                        </div>
+                    </div>
+
+                    <p>
+                        Our products
+                    </p>
+
+
+                <div class="nav__cards">
+                    <div class="nav__cards__card">
+                        <div class="span">
+                        <i class="fas fa-chart-line"></i> DATAFACTORY
+                        </div> <br>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eius facilis mollitia inventore nisi vitae autem, reiciendis corporis necessitatibus dolore repellat nam
+                            rem eveniet molestiae! Eos eveniet qui quos numquam.
+                        </p>
+                    </div>
+
+                    <div class="nav__cards__card">
+                        <div class="span">
+                        <i class="fas fa-chart-line"></i> DATAFACTORY
+                        </div> <br>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eius facilis mollitia inventore nisi vitae autem, reiciendis corporis necessitatibus dolore repellat nam
+                            rem eveniet molestiae! Eos eveniet qui quos numquam.
+                        </p>
+                    </div>
+
+
+                </div>
+        </nav>
+
+        <nav class="nav nav-item" id='nav2' >
+                      <div class="nav__menu">
+                        <a href="index.php" class='logo'>
+                            <img src="public/img/Logo.svg" alt="">
+                        </a>
+                        <ul>
+                        <li onclick="showNav1()" >
+                                <a href="">
+                                Products <i class="fas fa-chevron-down"></i>
+                                </a>
+                            </li>
+
+                            <li onclick="showNav2()">
+                                Ressources <i class="fas fa-chevron-down"></i>
+                            </li>
+
+                            <li onclick="showNav()">
+                                Company <i class="fas fa-chevron-down"></i>
+                            </li>
+                        </ul>
+
+                        <div class="buttons">
+                            <button class='btn btn-cyan'>
+                                Free demo
+                            </button>
+
+                            <p>
+                                FR <i class="fas fa-chevron-down"></i>
+                            </p>
+                        </div>
+                    </div>
+
+                    <p>
+                    Discover all our ressources
+                    </p>
+
+
+                <div class="nav__cards">
+                    <div class="nav__cards__card">
+                        <div class="span">
+                        <i class="fas fa-chart-line"></i> DATAFACTORY
+                        </div> <br>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eius facilis mollitia inventore nisi vitae autem, reiciendis corporis necessitatibus dolore repellat nam
+                            rem eveniet molestiae! Eos eveniet qui quos numquam.
+                        </p>
+                    </div>
+
+                    <div class="nav__cards__card">
+                        <div class="span">
+                        <i class="fas fa-chart-line"></i> DATAFACTORY
+                        </div> <br>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eius facilis mollitia inventore nisi vitae autem, reiciendis corporis necessitatibus dolore repellat nam
+                            rem eveniet molestiae! Eos eveniet qui quos numquam.
+                        </p>
+                    </div>
+
+                    <div class="nav__cards__card">
+                        <div class="span">
+                        <i class="fas fa-chart-line"></i> DATAFACTORY
+                        </div> <br>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eius facilis mollitia inventore nisi vitae autem, reiciendis corporis necessitatibus dolore repellat nam
+                            rem eveniet molestiae! Eos eveniet qui quos numquam.
+                        </p>
+                    </div>
+
+                    <div class="nav__cards__card">
+                        <div class="span">
+                        <i class="fas fa-chart-line"></i> DATAFACTORY
+                        </div> <br>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eius facilis mollitia inventore nisi vitae autem, reiciendis corporis necessitatibus dolore repellat nam
+                            rem eveniet molestiae! Eos eveniet qui quos numquam.
+                        </p>
+                    </div>
+
+
                 </div>
         </nav>
 
@@ -87,6 +230,12 @@
                     <div class="hero__main__block">
                         <img src="public/img/illustration-data-management.png" alt="" class='image'>
                     </div>
+                </div>
+
+                <div class="hero__text">
+                    <span>- DATA</span>
+                    <strong> CLOUD</strong>
+                    <span>- DA</span>
                 </div>
         </div>
 
@@ -456,5 +605,6 @@
             </p>
         </div>
     </footer>
+    <script src="public/js/script.js" ></script>
 </body>
 </html>

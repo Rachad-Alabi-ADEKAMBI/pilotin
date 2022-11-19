@@ -15,7 +15,7 @@
 </head>
 <body>
 
-<div class="nav nav-item">
+<nav class="nav nav-item">
         <div class="nav__menu">
                         <a href="index.php" class='logo'>
                             <img src="public/img/Logo.svg" alt="">
@@ -99,9 +99,12 @@
                         </ul>
 
                         <div class="buttons">
-                            <button class='btn btn-cyan'>
-                                Free demo
-                            </button>
+                            <!--<button class='btn btn-cyan'>
+                                Free demo <i class="fas fa-chevron-down"></i>
+                            </button>  -->
+                            <div class="btn">
+                            Free mo <i class="fas fa-chevron-down"></i>
+                            </div>
 
                             <p>
                                 FR <i class="fas fa-chevron-down"></i>
@@ -155,6 +158,6 @@
                 </p>
             </div>
         </div>
-    </div>
+</nav>
 </body>
 </html>

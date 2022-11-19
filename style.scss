@@ -73,6 +73,20 @@ a{
 
 .btn{
     @include btn();
+    transition: 500ms ease-in-out;
+}
+
+.btn i{
+    display: none;
+}
+
+.btn:hover{
+    margin: 40px;
+  //  width: calc(100% + 20px);
+    transform: scale(1.1);
+    i{
+        display: block;
+    }
 }
 
 .btn-orange{
@@ -125,7 +139,7 @@ a{
     margin: 0;
     background: linear-gradient(89.16deg, #072038 1.27%, #0A355F 99.82%);
     width: 100%;
-
+    z-index: -9999;
     &__menu{
         width: 90%;
         margin: auto;
@@ -144,7 +158,8 @@ a{
                 display: inline;
                 margin: 15px;
                 cursor: pointer;
-                padding: 10px;
+                padding: 5px;
+                border-radius: 10px;
 
                 a{
                     color: $white;
@@ -189,12 +204,12 @@ a{
         }
     }
 
-
-
     .nav__cards{
         width: 90%;
         @include flex();
         margin: auto;
+        background-color: $white;
+        z-index: 9999;
 
         &__card{
             flex: 1;
@@ -204,6 +219,11 @@ a{
             span{
                 color: red;
 
+                i{
+                    color: $orange;
+                    display: none;
+                    margin-right: 20px;
+                }
             }
 
             p{
@@ -214,9 +234,7 @@ a{
 }
 
 .nav-item{
-    background: $white;
-    display: block;
-    text-align: left;
+
 
     .nav__menu{
         ul{
@@ -231,11 +249,29 @@ a{
     }
 }
 
+    #nav1,
+    #nav2{
+        background: $white;
+        z-index: 99999;
+        margin-bottom: 10px;
+        height: auto;
+        text-align: left;
+        display: none;
+        transition: 500ms ease-in-out;
+
+        .nav__menu{
+            ul{
+                li:hover{
+                    background-color: $cyan-bg;
+                }
+            }
+        }
+
+    }
 
 .hero{
     background: linear-gradient(89.16deg, #072038 1.27%, #0A355F 99.82%);
-
-
+    padding-bottom: 80px;
     &__main{
                     @include flex();
                     height: max-content;
@@ -282,6 +318,28 @@ a{
                         }
                     }
         }
+
+    &__text{
+        width: 100%;
+        font-weight: 900;
+       // transform-origin: 0 0;
+  transform: rotate(-2deg);
+        font-size: 7em;
+        word-spacing: 0.3em;     //   letter-spacing: 2em;
+
+
+        span{
+            color: $cyan;
+           // letter-spacing: 0.6em;
+            font-weight: 900;
+        };
+        strong{
+            color: $black;
+     //       letter-spacing: 0.6em;
+            font-weight: 900;
+        }
+    }
+
      }
 
         section{
@@ -348,8 +406,11 @@ a{
                 margin-left: auto;
                 margin-right: auto;
                 top: -210px;
+                background: url('public/img/computer-screen-data-score-analyst.png');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
 
-                background: url(public/img/computer-screen-data-score-analyst.png);
             }
 
             h2{
@@ -682,7 +743,6 @@ a{
 
         .footer{
             margin: 90px auto 0 auto;
-            background-color: red;
             &__up{
                 width: 90%;
                 margin: auto;
@@ -745,9 +805,48 @@ a{
             .definition{}
         }
 
-        @media ( min-width : 1024px ) {
-            .definition{}
+
+        @media screen and ( min-width : 1024px ) and ( max-width : 1279px ) {
+           .nav{
+           }
+
+        .hero{
+            &__main{
+                flex-direction: column;
+
+                &__block{
+
+                }
+            }
         }
+
+       section{
+        .blue{
+
+            img{
+                width: 300px;
+            }
+
+            h2{
+                width: 70%;
+                text-align: center;
+                margin: auto;
+
+            }
+
+            &__item{
+                flex-direction: column;
+                display: none;
+            }
+        }
+
+        .about{
+            width: 50%;
+        }
+
+       }
+
+    }
 
         @media ( min-width : 768px ) {
             .definition{}
