@@ -15,149 +15,43 @@
 </head>
 <body>
 
-<nav class="nav nav-item">
-        <div class="nav__menu">
-                        <a href="index.php" class='logo'>
-                            <img src="public/img/Logo.svg" alt="">
-                        </a>
-                        <ul>
-                                <li>
-                                    <a href="">
-                                    Products <i class="fas fa-chevron-down"></i>
-                                    </a>
-                                </li>
+<section>
+            <div class="testimonials">
+                <h2>
+                They trust Pilot'in. <br>
+                <span> why not you? </span>
+                </h2>
 
-                                <li>
-                                    Ressources <i class="fas fa-chevron-down"></i>
-                                </li>
+                <div class="testimonials__slider">
+                    <div class="slide video">
 
-                                <li>
-                                    Company <i class="fas fa-chevron-down"></i>
-                                </li>
-                        </ul>
-
-                        <div class="buttons">
-                            <button class='btn btn-cyan'>
-                                Free demo
-                            </button>
-
-                            <p>
-                                FR <i class="fas fa-chevron-down"></i>
-                            </p>
-                        </div>
                     </div>
 
-                    <p>
-            Our products
-        </p>
+                    <div class="slide">
+                        <img src="public/img/EXKi-2.png" alt="">
 
+                        <p class="testimony__author">
+                        Thierry Soubestre
+                        </p>
 
-        <div class="nav__cards">
-            <div class="nav__cards__card">
-                <div class="span">
-                <i class="fas fa-chart-line"></i> DATAFACTORY
-                </div> <br>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eius facilis mollitia inventore nisi vitae autem, reiciendis corporis necessitatibus dolore repellat nam
-                    rem eveniet molestiae! Eos eveniet qui quos numquam.
-                </p>
-            </div>
-
-            <div class="nav__cards__card">
-                <div class="span">
-                <i class="fas fa-chart-line"></i> DATAFACTORY
-                </div> <br>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eius facilis mollitia inventore nisi vitae autem, reiciendis corporis necessitatibus dolore repellat nam
-                    rem eveniet molestiae! Eos eveniet qui quos numquam.
-                </p>
-            </div>
-
-
-        </div>
-    </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-    <div class="nav nav-item">
-        <div class="nav__menu">
-                        <a href="index.php" class='logo'>
-                            <img src="public/img/Logo.svg" alt="">
-                        </a>
-                        <ul>
-                                <li>
-                                    <a href="">
-                                    Products <i class="fas fa-chevron-down"></i>
-                                    </a>
-                                </li>
-
-                                <li>
-                                    Ressources <i class="fas fa-chevron-down"></i>
-                                </li>
-
-                                <li>
-                                    Company <i class="fas fa-chevron-down"></i>
-                                </li>
-                        </ul>
+                        <p class="description">
+                        In a few weeks, 5 critical
+                        financial data sources were integrated
+                        and information is now available every day.
+                        </p>
 
                         <div class="buttons">
-                            <!--<button class='btn btn-cyan'>
-                                Free demo <i class="fas fa-chevron-down"></i>
-                            </button>  -->
-                            <div class="btn">
-                            Free mo <i class="fas fa-chevron-down"></i>
+                            <div class="btn-circle">
+                            <i class="fas fa-arrow-left"></i>
                             </div>
 
-                            <p>
-                                FR <i class="fas fa-chevron-down"></i>
-                            </p>
+                            <div class="btn-circle">
+                            <i class="fas fa-arrow-right"></i>
+                            </div>
                         </div>
                     </div>
-
-                    <p>
-            Our products
-        </p>
-
-
-        <div class="nav__cards">
-            <div class="nav__cards__card">
-                <div class="span">
-                <i class="fas fa-chart-line"></i> DATAFACTORY
-                </div> <br>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eius facilis mollitia inventore nisi vitae autem, reiciendis corporis necessitatibus dolore repellat nam
-                    rem eveniet molestiae! Eos eveniet qui quos numquam.
-                </p>
+                </div>
             </div>
-
-            <div class="nav__cards__card">
-                <div class="span">
-                <i class="fas fa-chart-line"></i> DATAFACTORY
-                </div> <br>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eius facilis mollitia inventore nisi vitae autem, reiciendis corporis necessitatibus dolore repellat nam
-                    rem eveniet molestiae! Eos eveniet qui quos numquam.
-                </p>
-            </div>
-
-            <div class="nav__cards__card">
-                <div class="span">
-                <i class="fas fa-chart-line"></i> DATAFACTORY
-                </div> <br>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eius facilis mollitia inventore nisi vitae autem, reiciendis corporis necessitatibus dolore repellat nam
-                    rem eveniet molestiae! Eos eveniet qui quos numquam.
-                </p>
-            </div>
-
-            <div class="nav__cards__card">
-                <div class="span">
-                <i class="fas fa-chart-line"></i> DATAFACTORY
-                </div> <br>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eius facilis mollitia inventore nisi vitae autem, reiciendis corporis necessitatibus dolore repellat nam
-                    rem eveniet molestiae! Eos eveniet qui quos numquam.
-                </p>
-            </div>
-        </div>
-</nav>
+        </section>
 </body>
 </html>

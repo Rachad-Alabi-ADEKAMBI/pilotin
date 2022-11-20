@@ -83,25 +83,41 @@ a {
   font-weight: 600;
 }
 
-.top {
-  background-color: white;
-  text-align: center;
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-.top p a {
+.container .header .top {
+  background-color: #F7FAFB;
+  height: 35px;
+  top: 0;
+  padding-top: 13px;
+}
+.container .header .top p {
+  text-align: center;
+  margin: auto;
+}
+.container .header .top p a {
   color: #26C1D9;
   font-weight: bold;
 }
-
-.nav {
-  height: 40px;
-  padding: 10px;
+.container .header .top-light {
+  display: none;
+}
+.container .header .top-light:hover {
+  background-color: #F0FDFF;
+}
+.container .header .nav {
+  height: 65px;
   padding-top: 0px;
   margin: 0;
   background: linear-gradient(89.16deg, #072038 1.27%, #0A355F 99.82%);
   width: 100%;
   z-index: -9999;
 }
-.nav__menu {
+.container .header .nav__menu {
   width: 90%;
   margin: auto;
   display: flex;
@@ -109,38 +125,39 @@ a {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.nav__menu ul {
+.container .header .nav__menu ul {
   margin: auto 0;
 }
-.nav__menu ul li {
+.container .header .nav__menu ul li {
   color: white;
   display: inline;
   margin: 15px;
   cursor: pointer;
   padding: 5px;
+  height: 40px;
   border-radius: 10px;
 }
-.nav__menu ul li a {
+.container .header .nav__menu ul li a {
   color: white;
   font-weight: bold;
 }
-.nav__menu ul li a i {
+.container .header .nav__menu ul li a i {
   margin: 5px auto auto 5px;
 }
-.nav__menu ul li:hover {
+.container .header .nav__menu ul li:hover {
   background-color: #072038;
 }
-.nav__menu .buttons {
+.container .header .nav__menu .buttons {
   float: right;
   display: table;
 }
-.nav__menu .buttons .btn {
+.container .header .nav__menu .buttons .btn {
   display: table-cell;
   margin: 15px 15px auto auto;
   text-align: center;
   vertical-align: middle;
 }
-.nav__menu .buttons p {
+.container .header .nav__menu .buttons p {
   color: #26C1D9;
   font-weight: bold;
   display: table-cell;
@@ -149,11 +166,11 @@ a {
   margin-top: 30px;
   vertical-align: middle;
 }
-.nav__menu .buttons p i {
+.container .header .nav__menu .buttons p i {
   color: #26C1D9;
   margin-left: 10px;
 }
-.nav .nav__cards {
+.container .header .nav .nav__cards {
   width: 90%;
   display: flex;
   flex-direction: row;
@@ -163,32 +180,30 @@ a {
   background-color: white;
   z-index: 9999;
 }
-.nav .nav__cards__card {
+.container .header .nav .nav__cards__card {
   flex: 1;
   display: block;
   margin: 10px;
 }
-.nav .nav__cards__card span {
+.container .header .nav .nav__cards__card span {
   color: red;
 }
-.nav .nav__cards__card span i {
+.container .header .nav .nav__cards__card span i {
   color: #FD7762;
   display: none;
   margin-right: 20px;
 }
-.nav .nav__cards__card p {
+.container .header .nav .nav__cards__card p {
   color: #0D4048;
 }
-
-.nav-item .nav__menu ul li {
+.container .header .nav-item .nav__menu ul li {
   color: #072038;
 }
-.nav-item .nav__menu ul li a {
+.container .header .nav-item .nav__menu ul li a {
   color: #072038;
 }
-
-#nav1,
-#nav2 {
+.container .header #nav1,
+.container .header #nav2 {
   background: white;
   z-index: 99999;
   margin-bottom: 10px;
@@ -197,16 +212,22 @@ a {
   display: none;
   transition: 500ms ease-in-out;
 }
-#nav1 .nav__menu ul li:hover,
-#nav2 .nav__menu ul li:hover {
+.container .header #nav1 .nav__menu ul li:hover,
+.container .header #nav2 .nav__menu ul li:hover {
   background-color: #F0FDFF;
 }
-
-.hero {
-  background: linear-gradient(89.16deg, #072038 1.27%, #0A355F 99.82%);
-  padding-bottom: 80px;
+.container .content section {
+  background-color: white;
+  position: relative;
 }
-.hero__main {
+.container .content section .hero {
+  background: linear-gradient(89.16deg, #072038 1.27%, #0A355F 99.82%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  display: none;
+}
+.container .content section .hero__main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -217,7 +238,7 @@ a {
   width: 90%;
   margin: auto;
 }
-.hero__main__block {
+.container .content section .hero__main__block {
   text-align: left;
   padding-bottom: 50px;
   padding-left: 0;
@@ -225,14 +246,14 @@ a {
   margin: auto;
   flex: 1;
 }
-.hero__main__block h1 {
+.container .content section .hero__main__block h1 {
   font-weight: 600;
   font-size: 72px;
 }
-.hero__main__block h1 span {
+.container .content section .hero__main__block h1 span {
   color: #26C1D9;
 }
-.hero__main__block p {
+.container .content section .hero__main__block p {
   font-family: "Porpora";
   font-style: normal;
   font-weight: 400;
@@ -249,38 +270,37 @@ a {
   text-align: left;
   margin: 20px auto 35px 0;
 }
-.hero__main__block .images {
+.container .content section .hero__main__block .images {
   margin: 40px auto;
 }
-.hero__main__block .images img {
+.container .content section .hero__main__block .images img {
   width: 120px;
   height: auto;
   margin: auto 10px 0 0;
 }
-.hero__main__block .image {
+.container .content section .hero__main__block .image {
   width: 500px;
   margin: auto;
 }
-.hero__text {
+.container .content section .hero__text {
   width: 100%;
   font-weight: 900;
   transform: rotate(-2deg);
   font-size: 7em;
   word-spacing: 0.3em;
 }
-.hero__text span {
+.container .content section .hero__text span {
   color: #26C1D9;
   font-weight: 900;
 }
-.hero__text strong {
+.container .content section .hero__text strong {
   color: #072038;
   font-weight: 900;
 }
-
-section {
-  background-color: white;
+.container .content section .hero img {
+  margin: 10px 0 -5px 0;
 }
-section .about {
+.container .content section .about {
   margin: 20px auto;
   display: flex;
   flex-direction: row;
@@ -289,25 +309,19 @@ section .about {
   width: 80%;
   padding-bottom: 300px;
 }
-section .about__item {
+.container .content section .about__item {
   flex: 1;
   display: block;
   text-align: left;
 }
-section .about__item h2 {
+.container .content section .about__item h2 {
   width: 439px;
   height: 120px;
-  font-family: "Outfit";
-  font-style: normal;
   font-weight: 500;
   font-size: 60px;
   line-height: 60px;
-  flex: none;
-  order: 1;
-  align-self: stretch;
-  flex-grow: 0;
 }
-section .about__item p {
+.container .content section .about__item p {
   width: 519px;
   height: 384px;
   /* paragraphe/text-regular */
@@ -317,14 +331,24 @@ section .about__item p {
   font-size: 18px;
   line-height: 24px;
 }
-section .blue {
+.container .content section .about .parallax {
+  position: absolute;
+  right: 10px;
+  top: 90px;
+}
+.container .content section .about .parallax img {
+  margin: auto;
+  width: 120px;
+}
+.container .content section .blue {
   background: linear-gradient(89.16deg, #072038 1.27%, #0A355F 99.82%);
   height: auto;
   width: 100%;
   position: relative;
-  padding-bottom: 90px;
+  padding-bottom: 0px;
+  display: none;
 }
-section .blue img {
+.container .content section .blue__image {
   position: absolute;
   width: 1062px;
   height: 423px;
@@ -339,7 +363,7 @@ section .blue img {
   background-repeat: no-repeat;
   background-size: cover;
 }
-section .blue h2 {
+.container .content section .blue h2 {
   height: 60px;
   font-family: "Outfit";
   font-style: normal;
@@ -356,10 +380,10 @@ section .blue h2 {
   align-self: stretch;
   flex-grow: 0;
 }
-section .blue h2 span {
+.container .content section .blue h2 span {
   color: #26C1D9;
 }
-section .blue__item {
+.container .content section .blue__item {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -371,11 +395,11 @@ section .blue__item {
   border-radius: 25px;
   flex: none;
   order: 1;
-  margin: 30px auto;
+  margin: 60px auto;
   align-self: stretch;
   flex-grow: 0;
 }
-section .blue__item__box {
+.container .content section .blue__item__box {
   width: 603px;
   height: 757px;
   flex: none;
@@ -383,15 +407,15 @@ section .blue__item__box {
   flex-grow: 0;
   text-align: left;
 }
-section .blue__item__box .box-title {
+.container .content section .blue__item__box .box-title {
   display: table;
 }
-section .blue__item__box .box-title i {
+.container .content section .blue__item__box .box-title i {
   color: #FD7762;
   font-size: 3em;
   display: table-cell;
 }
-section .blue__item__box .box-title h2 {
+.container .content section .blue__item__box .box-title h2 {
   width: 384px;
   height: 58px;
   color: #072038;
@@ -399,16 +423,17 @@ section .blue__item__box .box-title h2 {
   margin: 10px;
   padding-top: 10px;
 }
-section .blue__item__box p {
-  width: 520px;
+.container .content section .blue__item__box p {
+  width: 80%;
+  margin: auto 0;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
 }
-section .blue__item__box .infos {
+.container .content section .blue__item__box .infos {
   display: block;
 }
-section .blue__item__box .infos__info {
+.container .content section .blue__item__box .infos__info {
   margin: 20px auto;
   display: flex;
   flex-direction: row;
@@ -416,38 +441,44 @@ section .blue__item__box .infos__info {
   flex-wrap: wrap;
   display: inline-flex;
 }
-section .blue__item__box .infos__info .icon {
+.container .content section .blue__item__box .infos__info .icon {
   width: 30px;
   text-align: center;
   display: table;
   height: 30px;
   background-color: #F0FDFF;
 }
-section .blue__item__box .infos__info .icon i {
+.container .content section .blue__item__box .infos__info .icon i {
   color: #0D4048;
   display: table-cell;
   vertical-align: middle;
 }
-section .blue__item__box .infos__info p {
+.container .content section .blue__item__box .infos__info p {
   margin: auto 50px;
 }
-section .blue__item .box-bg {
+.container .content section .blue__item .box-center {
+  display: block;
+}
+.container .content section .blue__item .box-bg {
   background: url(public/img/Datafactory6@2x.png);
 }
-section .blue__item .box-left {
+.container .content section .blue__item .box-left {
   padding-left: 100px;
 }
-section .testimonials {
+.container .content section .blue .blue__bottom img {
+  margin-bottom: -10px;
+}
+.container .content section .testimonials {
   margin: 20px auto;
 }
-section .testimonials h2 {
+.container .content section .testimonials h2 {
   text-align: center;
 }
-section .testimonials h2 span {
+.container .content section .testimonials h2 span {
   font-size: 0.8em;
   font-weight: 400;
 }
-section .testimonials__slider {
+.container .content section .testimonials__slider {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -467,7 +498,7 @@ section .testimonials__slider {
   z-index: 2;
   margin: auto;
 }
-section .testimonials__slider .slide {
+.container .content section .testimonials__slider .slide {
   flex: 1;
   display: block;
   color: white;
@@ -477,14 +508,14 @@ section .testimonials__slider .slide {
   border-bottom-left-radius: 25px;
   text-align: left;
 }
-section .testimonials__slider .slide img {
+.container .content section .testimonials__slider .slide img {
   width: 150px;
 }
-section .testimonials__slider .slide .testimony__author {
+.container .content section .testimonials__slider .slide .testimony__author {
   color: #26C1D9;
   font-size: 1.1em;
 }
-section .testimonials__slider .slide .description {
+.container .content section .testimonials__slider .slide .description {
   width: 496px;
   height: 160px;
   font-family: "Outfit";
@@ -498,7 +529,7 @@ section .testimonials__slider .slide .description {
   align-self: stretch;
   flex-grow: 0;
 }
-section .testimonials__slider .slide .buttons {
+.container .content section .testimonials__slider .slide .buttons {
   width: 90px;
   margin: 40px auto auto 0;
   display: flex;
@@ -506,14 +537,16 @@ section .testimonials__slider .slide .buttons {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-section .testimonials__slider .slide .buttons .btn-circle {
+.container .content section .testimonials__slider .slide .buttons .btn-circle {
   border-color: white;
 }
-section .testimonials__slider .slide .buttons .btn-circle i {
+.container .content section .testimonials__slider .slide .buttons .btn-circle i {
   color: white;
 }
-section .testimonials__slider .video {
+.container .content section .testimonials__slider .video {
   padding-top: 0;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
   height: 100%;
   overflow: hidden;
   background-position: center;
@@ -521,11 +554,11 @@ section .testimonials__slider .video {
   background-size: cover;
   background: url("public/img/Casclient-Exki.jpeg");
 }
-section .blog {
+.container .content section .blog {
   text-align: center;
   margin: 60px auto;
 }
-section .blog p {
+.container .content section .blog p {
   font-family: "Porpora";
   font-style: normal;
   font-weight: 400;
@@ -538,18 +571,17 @@ section .blog p {
   align-self: stretch;
   flex-grow: 0;
   width: 60%;
-  height: 72px;
   margin: auto;
 }
-section .blog .cards {
+.container .content section .blog .cards {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
   width: 90%;
-  margin: 50px auto;
+  margin: 40px auto;
 }
-section .blog .cards__card {
+.container .content section .blog .cards__card {
   border-radius: 5px;
   border: 1px solid #072038;
   margin: 10px;
@@ -559,22 +591,22 @@ section .blog .cards__card {
   padding-top: 30px;
   padding-bottom: 50px;
 }
-section .blog .cards__card .category {
+.container .content section .blog .cards__card .category {
   width: 120px;
   height: 20px;
   color: #26C1D9;
   border: 1px solid #26C1D9;
 }
-section .blog .cards__card .extract {
+.container .content section .blog .cards__card .extract {
   text-align: left;
   margin: 60px auto auto 0;
   width: 90%;
 }
-section .blog .cards__card .extract-bold {
+.container .content section .blog .cards__card .extract-bold {
   font-weight: 600;
   margin: 30px auto auto 0;
 }
-section .blog .cards__card .more {
+.container .content section .blog .cards__card .more {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -582,35 +614,34 @@ section .blog .cards__card .more {
   margin: 60px auto auto 0;
   width: 90%;
 }
-section .blog .cards__card .more img {
+.container .content section .blog .cards__card .more img {
   border-radius: 30px;
   width: 50px;
   height: 50px;
 }
-section .blog .cards__card .more .blog-author {
+.container .content section .blog .cards__card .more .blog-author {
   color: #072038;
   font-weight: 500;
   width: 60%;
   margin: 5px auto auto 5px;
 }
-section .blog .cards__card .more .btn-circle {
+.container .content section .blog .cards__card .more .btn-circle {
   margin-top: 5px;
 }
-section .demo {
+.container .content section .demo {
   width: 80%;
   margin: auto;
-  height: 498px;
+  height: auto;
+  background: url("public/img/cta-illustation-corporate.png");
+  background-position: left;
+  background-repeat: no-repeat;
   background-color: #072038;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  background-size: auto;
 }
-section .demo__text {
-  padding-top: 40px;
-  width: 55%;
+.container .content section .demo__text {
+  width: 80%;
 }
-section .demo__text h3 {
+.container .content section .demo__text h3 {
   font-family: "Outfit";
   font-style: normal;
   font-weight: 500;
@@ -622,7 +653,7 @@ section .demo__text h3 {
   align-self: stretch;
   flex-grow: 0;
 }
-section .demo__text p {
+.container .content section .demo__text p {
   width: 592px;
   height: 80px;
   font-family: "Outfit";
@@ -636,16 +667,14 @@ section .demo__text p {
   align-self: stretch;
   flex-grow: 0;
 }
-section .demo__icons {
-  width: 45%;
-  height: 100%;
-  background: url("public/img/cta-illustation-corporate.png");
+.container .footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  margin-top: 120px;
+  text-align: center;
 }
-
-.footer {
-  margin: 90px auto 0 auto;
-}
-.footer__up {
+.container .footer__up {
   width: 90%;
   margin: auto;
   display: flex;
@@ -653,71 +682,75 @@ section .demo__icons {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.footer__up__item {
+.container .footer__up__item {
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.footer__up__item h4 {
+.container .footer__up__item h4 {
   color: #156B79;
 }
-.footer__up__item .links {
+.container .footer__up__item .links {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: 40px auto aut0 0;
+  margin: 40px auto auto 0;
   text-align: left;
 }
-.footer__up__item .links a, .footer__up__item .links span {
+.container .footer__up__item .links a, .container .footer__up__item .links span {
   color: #26C1D9;
   margin: auto 0;
 }
-.footer__bottom {
+.container .footer__bottom {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   gap: 78px;
   width: 100%;
   height: 60px;
-  margin: 60px auto;
+  margin: 60px auto 0 auto;
   padding-top: 40px;
   background: #F7FAFB;
-  background-color: purple;
 }
-.footer__bottom ul {
+.container .footer__bottom ul {
   margin: 10px auto auto 30px;
 }
-.footer__bottom ul li {
+.container .footer__bottom ul li {
   display: inline;
   margin: auto;
 }
-.footer__bottom p {
+.container .footer__bottom p {
   margin: 10px 0px auto auto;
 }
-.footer__bottom p span {
+.container .footer__bottom p span {
   font-weight: bold;
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
-  .hero__main {
+  .container h2 {
+    font-size: 30px;
+  }
+  .container .content section .about {
+    width: 90%;
+  }
+  .container .content section .about {
+    width: 90%;
+  }
+  .container .content section .testimonials__slider .slide .description {
+    width: 400px;
+  }
+  .container .content section .blog {
+    width: 90%;
+  }
+  .container .content section .blog .cards {
+    width: 100%;
+  }
+  .container .content section .demo {
+    width: 90%;
+    height: 800px;
     flex-direction: column;
-  }
-  section .blue img {
-    width: 300px;
-  }
-  section .blue h2 {
-    width: 70%;
-    text-align: center;
-    margin: auto;
-  }
-  section .blue__item {
-    flex-direction: column;
-    display: none;
-  }
-  section .about {
-    width: 50%;
   }
 }/*# sourceMappingURL=style.css.map */
