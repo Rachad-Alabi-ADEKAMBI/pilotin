@@ -622,7 +622,8 @@ a{
                        flex: 1;
                        display: block;
                        color: $white;
-                       padding-top: 80px;
+                       background-color: $black;
+                       height: 100%;
                        overflow: hidden;
                        border-top-left-radius: 25px;
                        border-bottom-left-radius: 25px;
@@ -630,6 +631,7 @@ a{
 
                        img{
                            width: 150px;
+                           margin: 40px auto;
                        }
 
                       .testimony__author{
@@ -638,8 +640,8 @@ a{
                       }
 
                        .description{
-                           width: 496px;
-                           height: 160px;
+                           width: auto;
+                           padding-right: 10px;
                            font-family: 'Outfit';
                            font-style: normal;
                            font-weight: 500;
@@ -650,6 +652,7 @@ a{
                            order: 2;
                            align-self: stretch;
                            flex-grow: 0;
+
                        }
 
                        .buttons{
@@ -768,6 +771,7 @@ a{
 
               &__text{
                       width: 80%;
+
 
                    h3{
                        font-family: 'Outfit';
@@ -935,10 +939,79 @@ a{
 
     }
 
-        @media ( min-width : 768px ) {
-            .definition{}
+    @media screen and ( min-width : 768px ) and ( max-width : 1023px ) {
+        .container{
+            .content{
+                section{
+                    .about{
+                        width: 90%;
+                    }
+
+                    .testimonials{
+                        h2{
+                            font-size: 2.1em;
+                        }
+
+                        &__slider{
+                            height: 400px;
+                            width: 90%;
+
+                            .slide{
+                                    padding-top: 5px;
+                                img{
+                                    margin: 10px auto;
+                                }
+                                .description{
+                                    font-size: 1.5em;
+                                }
+
+                                .buttons{
+                                    margin: 20px auto auto 0;
+                                }
+                            }
+                        }
+                    }
+
+                    .blog{
+                        margin: 40px auto;
+
+                        p{
+                            width: 80%;
+                        }
+
+                        .cards{
+                           @include flex(column);
+
+                           &__card{
+                                .category{
+                                    padding-top: 15px;
+
+                                }
+
+                                .extract{
+                                    margin: 30px auto;
+                                }
+
+                           }
+                        }
+                    }
+                }
+            }
         }
 
+    }
+
+
+    @media screen and ( min-width : 575px ) and ( max-width : 767px ) {
+        .container{
+            .content{
+                section{
+
+                }
+            }
+
+        }
+    }
         @media ( min-width : 350px ) {
             .definition{}
         }

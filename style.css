@@ -502,7 +502,8 @@ a {
   flex: 1;
   display: block;
   color: white;
-  padding-top: 80px;
+  background-color: #072038;
+  height: 100%;
   overflow: hidden;
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
@@ -510,14 +511,15 @@ a {
 }
 .container .content section .testimonials__slider .slide img {
   width: 150px;
+  margin: 40px auto;
 }
 .container .content section .testimonials__slider .slide .testimony__author {
   color: #26C1D9;
   font-size: 1.1em;
 }
 .container .content section .testimonials__slider .slide .description {
-  width: 496px;
-  height: 160px;
+  width: auto;
+  padding-right: 10px;
   font-family: "Outfit";
   font-style: normal;
   font-weight: 500;
@@ -752,5 +754,47 @@ a {
     width: 90%;
     height: 800px;
     flex-direction: column;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .container .content section .about {
+    width: 90%;
+  }
+  .container .content section .testimonials h2 {
+    font-size: 2.1em;
+  }
+  .container .content section .testimonials__slider {
+    height: 400px;
+    width: 90%;
+  }
+  .container .content section .testimonials__slider .slide {
+    padding-top: 5px;
+  }
+  .container .content section .testimonials__slider .slide img {
+    margin: 10px auto;
+  }
+  .container .content section .testimonials__slider .slide .description {
+    font-size: 1.5em;
+  }
+  .container .content section .testimonials__slider .slide .buttons {
+    margin: 20px auto auto 0;
+  }
+  .container .content section .blog {
+    margin: 40px auto;
+  }
+  .container .content section .blog p {
+    width: 80%;
+  }
+  .container .content section .blog .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .container .content section .blog .cards__card .category {
+    padding-top: 15px;
+  }
+  .container .content section .blog .cards__card .extract {
+    margin: 30px auto;
   }
 }/*# sourceMappingURL=style.css.map */
