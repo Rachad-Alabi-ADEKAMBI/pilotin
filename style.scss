@@ -26,6 +26,8 @@ font-weight: 700;
 font-size: 16px;
 line-height: 24px;
 cursor: pointer;
+padding-left: 5px;
+padding-right: 5px;
 }
 
 @mixin text(){
@@ -41,6 +43,21 @@ cursor: pointer;
     align-self: stretch;
     flex-grow: 0;
 }
+
+
+@keyframes card {
+    0% {
+      background-color: $cyan-light;
+    }
+
+    30% {
+        background-color: $cyan;
+      }
+
+    100% {
+        background-color: $cyan;
+    }
+    }
 
 
 html, body{
@@ -85,7 +102,7 @@ a{
 .btn:hover{
     margin: 40px;
   //  width: calc(100% + 20px);
-    transform: scale(1.1);
+ //   transform: scale(1.1);
     i{
         display: block;
     }
@@ -435,7 +452,6 @@ a{
                width: 100%;
                position: relative;
                padding-bottom: 0px;
-               display: none;
 
                &__image{
                    position: absolute;
@@ -625,8 +641,8 @@ a{
                        background-color: $black;
                        height: 100%;
                        overflow: hidden;
-                       border-top-left-radius: 25px;
-                       border-bottom-left-radius: 25px;
+                       border-top-right-radius: 25px;
+                       border-bottom-right-radius: 25px;
                        text-align: left;
 
                        img{
@@ -707,6 +723,7 @@ a{
                        border-radius: 5px;
                        border: 1px solid $black;
                        margin: 10px;
+                       cursor: pointer;
                        flex: 1;
                        text-align: left;
                        padding-left: 15px;
@@ -714,7 +731,7 @@ a{
                        padding-bottom: 50px;
 
                        .category{
-                           width: 120px;
+                           width: 100px;
                            height: 20px;
                            color: $cyan;
                            border: 1px solid $cyan;
@@ -753,7 +770,25 @@ a{
                                margin-top: 5px;
                            }
 
+                           .btn-circle:hover{
+                            background-color: $cyan-bg;
+                            border: 1px solid $cyan-bg;
+
+                            i{
+                                color: $black
+                            }
+                           }
+
                        }
+                   }
+
+                   &__card:hover{
+                    transition-timing-function: ease-in-out;
+                    -webkit-animation-name: card;
+                            animation-name: card;
+                    -webkit-animation-duration: 2s;
+                            animation-duration: 2s;
+                            background-color: $cyan;
                    }
                }
            }

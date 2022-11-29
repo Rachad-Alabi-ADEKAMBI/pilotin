@@ -1,3 +1,25 @@
+@-webkit-keyframes card {
+  0% {
+    background-color: #0D4048;
+  }
+  30% {
+    background-color: #26C1D9;
+  }
+  100% {
+    background-color: #26C1D9;
+  }
+}
+@keyframes card {
+  0% {
+    background-color: #0D4048;
+  }
+  30% {
+    background-color: #26C1D9;
+  }
+  100% {
+    background-color: #26C1D9;
+  }
+}
 html, body {
   padding: 0;
   margin: 0;
@@ -37,6 +59,8 @@ a {
   font-size: 16px;
   line-height: 24px;
   cursor: pointer;
+  padding-left: 5px;
+  padding-right: 5px;
   transition: 500ms ease-in-out;
 }
 
@@ -46,7 +70,6 @@ a {
 
 .btn:hover {
   margin: 40px;
-  transform: scale(1.1);
 }
 .btn:hover i {
   display: block;
@@ -346,7 +369,6 @@ a {
   width: 100%;
   position: relative;
   padding-bottom: 0px;
-  display: none;
 }
 .container .content section .blue__image {
   position: absolute;
@@ -505,8 +527,8 @@ a {
   background-color: #072038;
   height: 100%;
   overflow: hidden;
-  border-top-left-radius: 25px;
-  border-bottom-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
   text-align: left;
 }
 .container .content section .testimonials__slider .slide img {
@@ -587,6 +609,7 @@ a {
   border-radius: 5px;
   border: 1px solid #072038;
   margin: 10px;
+  cursor: pointer;
   flex: 1;
   text-align: left;
   padding-left: 15px;
@@ -594,7 +617,7 @@ a {
   padding-bottom: 50px;
 }
 .container .content section .blog .cards__card .category {
-  width: 120px;
+  width: 100px;
   height: 20px;
   color: #26C1D9;
   border: 1px solid #26C1D9;
@@ -629,6 +652,21 @@ a {
 }
 .container .content section .blog .cards__card .more .btn-circle {
   margin-top: 5px;
+}
+.container .content section .blog .cards__card .more .btn-circle:hover {
+  background-color: #F0FDFF;
+  border: 1px solid #F0FDFF;
+}
+.container .content section .blog .cards__card .more .btn-circle:hover i {
+  color: #072038;
+}
+.container .content section .blog .cards__card:hover {
+  transition-timing-function: ease-in-out;
+  -webkit-animation-name: card;
+  animation-name: card;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  background-color: #26C1D9;
 }
 .container .content section .demo {
   width: 80%;
